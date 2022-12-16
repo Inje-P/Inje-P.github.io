@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/index.css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+            crossorigin="anonymous"
+        />
+        <title>Arahan</title>
+    </head>
+    <body>
+        <header class="animated fadeIn__1">
+            <a href="index.html" class="logo"><img src="./img/arahan_typo_black.png" /></a>
+            <ul>
+                <li><a href="warning.html">아라한</a></li>
+                <li><a href="warning.html">한텡그리</a></li>
+                <li><a href="warning.html">아나톨리아</a></li>
+                <li><a href="warning.html">공지사항</a></li>
+            </ul>
+            <a href="login.html" class="signin">로그인</a>
+            <a href="#" class="menu"><img src="./img/menu_black.png" /></a>
+        </header>
+        <div id="mobile__menu" class="overlay">
+            <a class="close" style="text-decoration: none; font-weight: 800">&times;</a>
+            <div class="overlay__content">
+                <ul>
+                    <li>
+                        <a href="warning.html" class="navLink">아라한</a>
+                    </li>
+                    <li>
+                        <a href="warning.html" class="navLink">한텡그리</a>
+                    </li>
+                    <li>
+                        <a href="warning.html" class="navLink">아나톨리아</a>
+                    </li>
+                    <li>
+                        <a href="warning.html" class="navLink">공지사항</a>
+                    </li>
+                    <li style="text-align: center">
+                        <a href="login.html" id="navLink__signin">로그인</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="hero">
+            <div class="hero__wrapper">
+                <div class="hero__text">
+                    <h1 class="animated fadeIn__2">阿<br>羅<br>漢</h1>
+                    <p class="animated fadeIn__3">ARAHAN</p>
+                </div>
+            </div>
+        </section>
+
+        <div style="height: 50vh;"></div>
+
+        <script>
+            // Header Scroll
+            window.addEventListener('scroll', function () {
+                var header = document.querySelector('header');
+                header.classList.toggle('sticky', window.scrollY > 0);
+            });
+
+            // Mobile Menu
+            const doc = document;
+            const menuOpen = doc.querySelector('.menu');
+            const menuClose = doc.querySelector('.close');
+            const overlay = doc.querySelector('.overlay');
+
+            menuOpen.addEventListener('click', () => {
+                overlay.classList.add('overlay__active');
+            });
+
+            menuClose.addEventListener('click', () => {
+                overlay.classList.remove('overlay__active');
+            });
+        </script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

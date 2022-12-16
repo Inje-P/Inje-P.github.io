@@ -1,0 +1,611 @@
+/*
+* ───────────────────────────────────
+* Fonts | Eurasian
+* ───────────────────────────────────
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+/* font-family: 'Nanum Myeongjo', serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+/* font-family: 'Noto Serif KR', serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap');
+/* font-family: 'Noto Serif JP', serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200;300;400;500;600;700;900&display=swap');
+/* font-family: 'Noto Serif SC', serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap');
+/* font-family: 'Noto Serif TC', serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Tibetan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Noto Serif Tibetan', serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Noto Sans Hebrew', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Hebrew:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Noto Serif Hebrew', serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Noto Sans Arabic', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap');
+/* font-family: 'Noto Naskh Arabic', serif; */
+
+/*
+* ───────────────────────────────────
+* Fonts | Latin, Cyrillic
+* ───────────────────────────────────
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+/* font-family: 'Noto Serif', serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Noto Sans', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Noto Serif Display', serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Bitter', serif; */
+
+@font-face {
+    font-family: 'Pretendard-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-ExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: default;
+    background-color: #fff;
+}
+
+/*
+* ───────────────────────────────────
+* Animation
+* ───────────────────────────────────
+*/
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeIn__1 {
+    animation-name: fadeIn;
+}
+
+.fadeIn__2 {
+    animation-name: fadeIn;
+    animation-delay: 0.2s;
+}
+
+.fadeIn__3 {
+    animation-name: fadeIn;
+    animation-delay: 0.4s;
+}
+
+.fadeIn__4 {
+    animation-name: fadeIn;
+    animation-delay: 0.6s;
+}
+
+.fadeIn__5 {
+    animation-name: fadeIn;
+    animation-delay: 0.8s;
+}
+
+.fadeIn__6 {
+    animation-name: fadeIn;
+    animation-delay: 1s;
+}
+
+.fadeIn__7 {
+    animation-name: fadeIn;
+    animation-delay: 1.2s;
+}
+
+.fadeIn__8 {
+    animation-name: fadeIn;
+    animation-delay: 1.4s;
+}
+
+.fadeIn__9 {
+    animation-name: fadeIn;
+    animation-delay: 1.6s;
+}
+
+.fadeIn__10 {
+    animation-name: fadeIn;
+    animation-delay: 1.8s;
+}
+
+/*
+* ───────────────────────────────────
+* Header
+* ───────────────────────────────────
+*/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 30px 80px;
+    z-index: 99;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+    position: relative;
+    font-weight: 700;
+    background-color: transparent;
+    padding: 5px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    cursor: pointer;
+    border: solid 2.5px transparent;
+    border-radius: 20px;
+    transition: all 0.3s;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo:hover {
+    background-color: transparent;
+    border: solid 2.5px #202020;
+    border-radius: 0px;
+    cursor: pointer;
+    transition: all 0.6s;
+}
+
+.logo img {
+    cursor: pointer;
+    width: 80px;
+    background-color: transparent;
+}
+
+.logo:hover img {
+    /* content: url('../img/arahan_typo_white.png'); */
+    width: 80px;
+}
+
+header ul {
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
+}
+
+header ul li {
+    background-color: transparent;
+    color: #292929;
+    margin-bottom: 5px;
+    height: 10px;
+    line-height: 30px;
+    position: relative;
+    list-style: none;
+    transition: all 0.3s;
+}
+
+header ul li:hover {
+    color: #292929;
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+
+header ul li a {
+    font-family: 'Noto Serif KR', serif;
+    background-color: transparent;
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #292929;
+    font-weight: 500;
+    transition: 0.6s;
+}
+
+header ul li a:hover {
+    cursor: pointer;
+    color: #292929;
+    font-weight: 800;
+}
+
+header ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #292929;
+    transition: width 0.3s;
+}
+
+header ul li a:hover::after {
+    width: 50%;
+}
+
+.signin {
+    font-family: 'Noto Serif KR', serif;
+    font-weight: 700;
+    background-color: transparent;
+    color: #202020;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 5px 15px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 20px;
+    border: solid 2.5px transparent;
+}
+
+.signin:hover {
+    color: #fff;
+    background-color: #202020;
+    border: solid 2.5px #202020;
+    border-radius: 0px;
+    border: solid 3px rgba(41, 41, 41, 1);
+    cursor: pointer;
+    transition: all 0.6s;
+}
+
+/*
+* ───────────────────────────────────
+* Header | Sticky
+* ───────────────────────────────────
+*/
+
+.sticky {
+    padding: 15px 80px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.05);
+}
+
+.sticky ul,
+.sticky ul li {
+    background-color: #fff;
+}
+
+.sticky ul li a {
+    color: #303030;
+    background-color: #fff;
+}
+
+.sticky ul li a:hover {
+    color: #303030;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.sticky ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #303030;
+    transition: width 0.3s;
+}
+
+.sticky ul li a:hover::after {
+    width: 50%;
+}
+
+.sticky .signin {
+    color: #303030;
+    background-color: transparent;
+}
+
+.sticky .signin:hover {
+    background-color: #292929;
+    color: #fff;
+}
+
+/*
+* ───────────────────────────────────
+* Header | Mobile Navigation
+* ───────────────────────────────────
+*/
+
+.menu {
+    background-color: transparent;
+    display: none;
+    margin-bottom: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.menu img {
+    background-color: transparent;
+    width: 24px;
+    cursor: pointer;
+}
+
+.overlay {
+    height: 0;
+    width: 80%;
+    position: fixed;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.6s ease 0s;
+}
+
+.overlay__active {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.85);
+    width: 80%;
+    height: 80%;
+}
+
+.overlay__content {
+    display: flex;
+    height: 100%;
+    background-color: transparent;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay__content ul {
+    background-color: transparent;
+    padding-left: 0;
+}
+
+.overlay__content ul > li {
+    background-color: transparent;
+    list-style: none;
+}
+
+#navLink__signin {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 25px;
+    border-radius: 0px;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 0px;
+    border: solid 3px #fff;
+    transition: all 0.3s;
+}
+
+#navLink__signin:hover {
+    background-color: transparent;
+    border: solid 3px #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.overlay a {
+    background-color: transparent;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Noto Serif KR', serif;
+    font-weight: 600;
+    display: block;
+    transition: all 0.3s ease 0s;
+}
+
+.overlay a:hover {
+    cursor: pointer;
+    color: #aaa;
+}
+
+.overlay .close {
+    background-color: transparent;
+    position: absolute;
+    left: 10px;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    header ul,
+    .signin {
+        display: none;
+    }
+    .menu {
+        background-color: transparent;
+        display: initial;
+    }
+}
+
+@media (max-width: 720px) {
+    header {
+        padding: 20px 35px;
+    }
+
+    .sticky {
+        padding: 10px 35px;
+    }
+
+    .sticky .logo:hover {
+        border-radius: 12px;
+    }
+
+    .menu {
+        background-color: transparent;
+        font-size: 26px;
+        font-weight: 700;
+        padding: 0 8px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+}
+
+/*
+* ───────────────────────────────────
+* After Sign-In
+* ───────────────────────────────────
+*/
+
+#signout {
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 15px;
+    border-radius: 10px;
+    color: #292929;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: transparent;
+    border: solid 3px rgba(41, 41, 41, 1);
+}
+
+#signout:hover {
+    color: #292929;
+    background-color: transparent;
+    border: none;
+    border-radius: 20px;
+    border: solid 3px rgba(41, 41, 41, 1);
+    cursor: pointer;
+    transition: all 0.6s;
+}
+
+#navLink__signout {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 15px;
+    border-radius: 10px;
+    color: #292929;
+    background-color: #fff;
+    border: solid 3px rgba(41, 41, 41, 1);
+}
+
+#navLink__signout:hover {
+    color: #292929;
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    border: solid 3px rgba(41, 41, 41, 1);
+    cursor: pointer;
+    transition: all 0.6s;
+}
+
+.buttons__login {
+    display: inline;
+    background-color: transparent;
+}
+
+/*
+* ───────────────────────────────────
+* Footer
+* ───────────────────────────────────
+*/
+
+.social-links {
+    cursor: pointer;
+    text-decoration: none;
+    margin: 10px 30px;
+}
+
+.social-links img {
+    width: 30px;
+    transition: all 0.3s;
+}
+
+.social-links:hover img {
+    cursor: pointer;
+    transform: translateY(-7px);
+}
+
+.footer__logo {
+    background-color: transparent;
+}
+
+.footer__logo img {
+    background-color: transparent;
+    width: 100px;
+}
+
+.footer__links p {
+    background-color: transparent;
+}
+
+.footer__links .footer__link {
+    cursor: pointer;
+    text-decoration: none;
+    color: #888;
+    background-color: transparent;
+    transition: all 0.2s;
+}
+
+.footer__links .footer__link:hover {
+    color: #000;
+}
+
+@media (max-width: 1024px) {
+    #signout {
+        display: none;
+    }
+
+    .social-links img {
+        width: 28px;
+    }
+}
+
+@media (max-width: 720px) {
+    .social-links img {
+        width: 25px;
+    }
+}
